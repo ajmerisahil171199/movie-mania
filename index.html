@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Click Here for movie</title>
+
+  <!-- Open Graph (IMPORTANT for preview image) -->
+  <meta property="og:title" content="Click Here for XXX" />
+  <meta property="og:description" content="Check this out now 👆" />
+  <meta property="og:image" content="https://viral-link-five.vercel.app/thumbnail.png" />
+  <meta property="og:url" content="https://viral-link-five.vercel.app/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Preview -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @keyframes pulseZoom {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+    .pulse-zoom {
+      animation: pulseZoom 1s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+  
+  <div class="flex flex-col items-center gap-6">
+    
+    <!-- Image above button -->
+    <img 
+      src="thumbnail.png" 
+      alt="Thumbnail"
+      class="w-64 md:w-80 h-auto rounded-xl shadow-lg"
+    />
+
+    <!-- Button -->
+    <button 
+      onclick="window.open('https://youtube.com/shorts/vxuaTIMOIpQ?feature=share', '_blank')" 
+      class="pulse-zoom bg-blue-500 text-white px-6 py-3 text-lg font-semibold rounded-lg shadow-md hover:bg-blue-600 transition-colors">
+      Download Now ➜] 🡻
+    </button>
+
+  </div>
+
+</body>
+</html>
